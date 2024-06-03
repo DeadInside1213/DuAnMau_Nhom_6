@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 869694cc6fbbf364fba07bb54467d10c
+guid: 5782eed547fbea44d99b3f4f902986f1
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -121,133 +121,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: SPA_Enemy_Right_0
-      rect:
-        serializedVersion: 2
-        x: 15
-        y: 7
-        width: 24
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d4f98b0ccfa643c4da358fa910182c7d
-      internalID: 1969235597
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SPA_Enemy_Right_1
-      rect:
-        serializedVersion: 2
-        x: 53
-        y: 7
-        width: 24
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 998e9fe0a5057c948b30b410203af2ef
-      internalID: -231108563
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SPA_Enemy_Right_2
-      rect:
-        serializedVersion: 2
-        x: 91
-        y: 7
-        width: 24
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5a0a13044d57b3a4a82cb2492c58bc15
-      internalID: -1410491843
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SPA_Enemy_Right_3
-      rect:
-        serializedVersion: 2
-        x: 129
-        y: 9
-        width: 26
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6693dd9703fd3e7469b67366c6ed1d7d
-      internalID: -562246724
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SPA_Enemy_Right_4
-      rect:
-        serializedVersion: 2
-        x: 167
-        y: 13
-        width: 26
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 14373e1179db2784ebb7ba77e469c5bd
-      internalID: -2079397774
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SPA_Enemy_Right_5
-      rect:
-        serializedVersion: 2
-        x: 203
-        y: 7
-        width: 24
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 01438f8e8817d5942a959b1a21b5b9b6
-      internalID: 184942848
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
@@ -258,13 +132,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      SPA_Enemy_Right_0: 1969235597
-      SPA_Enemy_Right_1: -231108563
-      SPA_Enemy_Right_2: -1410491843
-      SPA_Enemy_Right_3: -562246724
-      SPA_Enemy_Right_4: -2079397774
-      SPA_Enemy_Right_5: 184942848
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4516350853339825067}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Min y
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 1040000026366906428}
   - component: {fileID: 8568582393016525648}
   - component: {fileID: 4388911308098441925}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Elevator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -189,7 +189,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2259133764193900068}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Max y
   m_TagString: Untagged
   m_Icon: {fileID: 0}

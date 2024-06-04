@@ -7,6 +7,7 @@ public class PlayerMovement : MonoBehaviour
 
     // Grab references for rigibody and animator from object
     [SerializeField] private float sp;
+    [SerializeField] private float jumpForce;
     private Rigidbody2D body;
     private Animator anim;
     private BoxCollider2D box;
@@ -21,6 +22,8 @@ public class PlayerMovement : MonoBehaviour
     }
     private void Update()
     {
+
+       
         float horizontalInput = Input.GetAxis("Horizontal");
         body.velocity = new Vector2(horizontalInput * sp, body.velocity.y);
 
@@ -35,7 +38,7 @@ public class PlayerMovement : MonoBehaviour
             Jump();
 
         // set animator parameters
-        anim.SetBool("run", horizontalInput != 0);
+        anim.SetFloat("run", horizontalInput);
         anim.SetBool("grounded", isGrounded());
 
         print(onWall());
@@ -43,7 +46,7 @@ public class PlayerMovement : MonoBehaviour
     }
     private void Jump()
     {
-        body.velocity = new Vector2(body.velocity.x, sp);
+        body.velocity = new Vector2(body.velocity.x, jumpForce);
         anim.SetTrigger("jump");
        
     }

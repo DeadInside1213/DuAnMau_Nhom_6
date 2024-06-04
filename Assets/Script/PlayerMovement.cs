@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -8,6 +9,8 @@ public class PlayerMovement : MonoBehaviour
     // Grab references for rigibody and animator from object
     [SerializeField] private float sp;
     [SerializeField] private float jumpForce;
+    [SerializeField] private GameObject arrow;
+    [SerializeField] private Transform hand;
     private Rigidbody2D body;
     private Animator anim;
     private BoxCollider2D box;
@@ -38,8 +41,26 @@ public class PlayerMovement : MonoBehaviour
             Jump();
 
         // set animator parameters
-        anim.SetFloat("run", horizontalInput);
+        anim.SetFloat("run", Mathf.Abs(horizontalInput));
         anim.SetBool("grounded", isGrounded());
+
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            
+            var bullet = Instantiate(arrow , hand.position, Quaternion.identity);
+
+            var velocity = new Vector3(50f, 0, 0);
+
+            if (transform.localScale.x <0)
+            {
+                velocity.x *= -1;
+            }
+
+
+            bullet.GetComponent<Rigidbody2D>().velocity = velocity;
+            Destroy(bullet, 2f);
+            anim.SetTrigger("shoot");
+        }
 
         print(onWall());
 
@@ -50,9 +71,7 @@ public class PlayerMovement : MonoBehaviour
         anim.SetTrigger("jump");
        
     }
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-    }
+
    private bool isGrounded()
     {
         RaycastHit2D hit = Physics2D.BoxCast(box.bounds.center, box.bounds.size, 0, Vector2.down, 0.1f, groundPlayer);

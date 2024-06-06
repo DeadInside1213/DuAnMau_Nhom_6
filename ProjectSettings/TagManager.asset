@@ -4,21 +4,18 @@
 TagManager:
   serializedVersion: 2
   tags:
-<<<<<<< HEAD
-  - Border
-  - Enemy
-=======
-  - Coin
+  - Arrow
   - Key
->>>>>>> main
+  - Coin
+  - Enemy
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Ground
+  - groundPlayer
   - Water
   - UI
-  - 
+  - wallPlayer
   - 
   - 
   - 

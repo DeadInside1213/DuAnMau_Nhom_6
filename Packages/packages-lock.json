@@ -1,7 +1,14 @@
 {
   "dependencies": {
+    "com.autodesk.fbx": {
+      "version": "4.2.1",
+      "depth": 2,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://packages.unity.com"
+    },
     "com.unity.2d.animation": {
-      "version": "9.0.3",
+      "version": "9.0.4",
       "depth": 1,
       "source": "registry",
       "dependencies": {
@@ -15,9 +22,13 @@
     },
     "com.unity.2d.aseprite": {
 <<<<<<< HEAD
+<<<<<<< HEAD
       "version": "1.1.0",
 =======
       "version": "1.0.0",
+>>>>>>> main
+=======
+      "version": "1.1.0",
 >>>>>>> main
       "depth": 1,
       "source": "registry",
@@ -30,7 +41,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.2d.common": {
-      "version": "8.0.1",
+      "version": "8.0.2",
       "depth": 2,
       "source": "registry",
       "dependencies": {
@@ -50,12 +61,12 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.2d.psdimporter": {
-      "version": "8.0.2",
+      "version": "8.0.3",
       "depth": 1,
       "source": "registry",
       "dependencies": {
-        "com.unity.2d.animation": "9.0.1",
-        "com.unity.2d.common": "8.0.1",
+        "com.unity.2d.animation": "9.0.4",
+        "com.unity.2d.common": "8.0.2",
         "com.unity.2d.sprite": "1.0.0"
       },
       "url": "https://packages.unity.com"
@@ -87,7 +98,7 @@
       }
     },
     "com.unity.2d.tilemap.extras": {
-      "version": "3.1.1",
+      "version": "3.1.2",
       "depth": 1,
       "source": "registry",
       "dependencies": {
@@ -99,7 +110,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.burst": {
-      "version": "1.8.8",
+      "version": "1.8.11",
       "depth": 3,
       "source": "registry",
       "dependencies": {
@@ -133,6 +144,13 @@
       },
       "url": "https://packages.unity.com"
     },
+    "com.unity.device-simulator.devices": {
+      "version": "1.0.0",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://packages.unity.com"
+    },
     "com.unity.ext.nunit": {
       "version": "1.0.6",
       "depth": 1,
@@ -145,12 +163,13 @@
       "depth": 0,
       "source": "builtin",
       "dependencies": {
-        "com.unity.2d.animation": "9.0.3",
+        "com.unity.2d.animation": "9.0.4",
         "com.unity.2d.pixel-perfect": "5.0.3",
-        "com.unity.2d.psdimporter": "8.0.2",
+        "com.unity.2d.psdimporter": "8.0.3",
         "com.unity.2d.sprite": "1.0.0",
         "com.unity.2d.spriteshape": "9.0.2",
         "com.unity.2d.tilemap": "1.0.0",
+<<<<<<< HEAD
 <<<<<<< HEAD
         "com.unity.2d.tilemap.extras": "3.1.2",
         "com.unity.2d.aseprite": "1.1.0"
@@ -158,7 +177,45 @@
         "com.unity.2d.tilemap.extras": "3.1.1",
         "com.unity.2d.aseprite": "1.0.0"
 >>>>>>> main
+=======
+        "com.unity.2d.tilemap.extras": "3.1.2",
+        "com.unity.2d.aseprite": "1.1.0"
+>>>>>>> main
       }
+    },
+    "com.unity.feature.cinematic": {
+      "version": "1.0.0",
+      "depth": 0,
+      "source": "builtin",
+      "dependencies": {
+        "com.unity.timeline": "1.7.6",
+        "com.unity.sequences": "2.0.1",
+        "com.unity.formats.fbx": "4.2.1",
+        "com.unity.formats.alembic": "2.3.2",
+        "com.unity.cinemachine": "2.9.5",
+        "com.unity.recorder": "4.0.2"
+      }
+    },
+    "com.unity.formats.alembic": {
+      "version": "2.3.2",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.timeline": "1.0.0",
+        "com.unity.modules.unityanalytics": "1.0.0",
+        "com.unity.modules.cloth": "1.0.0"
+      },
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.formats.fbx": {
+      "version": "4.2.1",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.timeline": "1.7.1",
+        "com.autodesk.fbx": "4.2.1"
+      },
+      "url": "https://packages.unity.com"
     },
     "com.unity.ide.rider": {
       "version": "3.0.27",
@@ -180,6 +237,34 @@
     },
     "com.unity.mathematics": {
       "version": "1.2.6",
+      "depth": 2,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.recorder": {
+      "version": "4.0.2",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.timeline": "1.0.0"
+      },
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.sequences": {
+      "version": "2.0.1",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.timeline": "1.6.3",
+        "com.unity.recorder": "2.5.5",
+        "com.unity.settings-manager": "1.0.3",
+        "com.unity.ugui": "1.0.0"
+      },
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.settings-manager": {
+      "version": "2.0.1",
       "depth": 2,
       "source": "registry",
       "dependencies": {},

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Coin
   - Key
+  - Arrow
   layers:
   - Default
   - TransparentFX

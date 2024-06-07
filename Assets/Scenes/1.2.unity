@@ -9391,6 +9391,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6388320291176925769, guid: 9554e51728dbd3b4981bff00982ba4ef, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8316804535928595482, guid: 9554e51728dbd3b4981bff00982ba4ef, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 1422020878}
     - target: {fileID: 8655940841647279897, guid: 9554e51728dbd3b4981bff00982ba4ef, type: 3}
       propertyPath: m_Name
       value: GameOver
@@ -9402,7 +9410,7 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: 9554e51728dbd3b4981bff00982ba4ef, type: 3}
 --- !u!1 &662476193 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 8655940841647279897, guid: 9554e51728dbd3b4981bff00982ba4ef, type: 3}
+  m_CorrespondingSourceObject: {fileID: 6388320291176925769, guid: 9554e51728dbd3b4981bff00982ba4ef, type: 3}
   m_PrefabInstance: {fileID: 662476192}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &709571093

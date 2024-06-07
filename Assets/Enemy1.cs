@@ -53,7 +53,7 @@ public class Enemy1 : MonoBehaviour
         transform.Translate(direction);
 
         transform.localScale = _isMovingRight ?
-         new Vector3(-1, 1, 0) : new Vector3(1, 1, 0);
+         new Vector3(1, 1, 0) : new Vector3(-1, 1, 0);
     }
 
     private void OnTriggerEnter2D(Collider2D other)

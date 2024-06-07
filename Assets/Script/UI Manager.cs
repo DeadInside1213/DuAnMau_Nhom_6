@@ -18,6 +18,7 @@ public class UIManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Time.timeScale = 1f;
         HP = 3;
         PlayerPrefs.SetInt("Score", 0);
         Score = PlayerPrefs.GetInt("Score");
@@ -25,12 +26,22 @@ public class UIManager : MonoBehaviour
 
     // Update is called once per frame
     void Update()
+
     {
+
+        for (int i = 0; i < 3; i++)
+        {
+            _heart[i].SetActive(false);
+        }
+
+
         _scoreText.text = "Score: " + PlayerPrefs.GetInt("Score").ToString();
         for (int i = 0; i < HP; i++)
         {
             _heart[i].SetActive(true);
         }
+
+        Dead();
     }
 
     public void HPUpdate()

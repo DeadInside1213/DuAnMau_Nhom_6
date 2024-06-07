@@ -21,7 +21,15 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.2d.aseprite": {
+<<<<<<< HEAD
+<<<<<<< HEAD
       "version": "1.1.0",
+=======
+      "version": "1.0.0",
+>>>>>>> main
+=======
+      "version": "1.1.0",
+>>>>>>> main
       "depth": 1,
       "source": "registry",
       "dependencies": {
@@ -161,8 +169,18 @@
         "com.unity.2d.sprite": "1.0.0",
         "com.unity.2d.spriteshape": "9.0.2",
         "com.unity.2d.tilemap": "1.0.0",
+<<<<<<< HEAD
+<<<<<<< HEAD
         "com.unity.2d.tilemap.extras": "3.1.2",
         "com.unity.2d.aseprite": "1.1.0"
+=======
+        "com.unity.2d.tilemap.extras": "3.1.1",
+        "com.unity.2d.aseprite": "1.0.0"
+>>>>>>> main
+=======
+        "com.unity.2d.tilemap.extras": "3.1.2",
+        "com.unity.2d.aseprite": "1.1.0"
+>>>>>>> main
       }
     },
     "com.unity.feature.cinematic": {

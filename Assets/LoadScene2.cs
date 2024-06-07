@@ -5,11 +5,15 @@ using UnityEngine.SceneManagement;
 
 public class LoadScene2 : MonoBehaviour
 {
-    private void OnTriggerEnter2D(Collider2D collision)
+
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player"))
         {
             SceneManager.LoadScene("1.2");
         }
+
     }
+
+    
 }

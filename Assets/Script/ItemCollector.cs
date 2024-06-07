@@ -6,10 +6,13 @@ public class ItemCollector : MonoBehaviour
 {
 
     string[] itemTag = { "Item", "Coin" };
+
+    UIManager _uiManager;
+
     // Start is called before the first frame update
     void Start()
     {
-
+        _uiManager = FindAnyObjectByType<UIManager>();
     }
 
     // Update is called once per frame
@@ -22,7 +25,7 @@ public class ItemCollector : MonoBehaviour
     {
         if (collision.tag == "Coin")
         {
-            SendMessage("UpdateScore", 1000);
+            _uiManager.ScoreUpdate(1000);
             Destroy(collision.gameObject);
 
         }

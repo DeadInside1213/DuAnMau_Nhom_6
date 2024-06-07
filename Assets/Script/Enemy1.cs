@@ -14,10 +14,15 @@ public class Enemy1 : MonoBehaviour
     private bool _isMovingRight;
     private AudioSource _audioSource;
 
+    UIManager _uiManager;
+
     [SerializeField] AudioClip _deadSound;
     // Start is called before the first frame update
     void Start()
     {
+
+        _uiManager = FindAnyObjectByType<UIManager>();
+
         _audioSource = GetComponent<AudioSource>();
     }
 
@@ -48,15 +53,26 @@ public class Enemy1 : MonoBehaviour
         transform.Translate(direction);
 
         transform.localScale = _isMovingRight ?
-         new Vector3(-1, 1, 0) : new Vector3(1, 1, 0);
+         new Vector3(1, 1, 0) : new Vector3(-1, 1, 0);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Arrow"))
         {
+            _uiManager.ScoreUpdate(1000);
+
             Destroy(gameObject);
             Destroy(other.gameObject);
         }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            _uiManager.HPUpdate();
+        }
+
     }
 }

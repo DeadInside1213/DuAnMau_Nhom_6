@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,12 +6,23 @@ using UnityEngine;
 public class Trap : MonoBehaviour
 {
     public GameObject gameOverObject;
-    private void OnTriggerEnter2D(Collider2D collision)
+    [SerializeField] GameObject player;
+    [SerializeField] GameObject respawn;
+
+    UIManager _uIManager;
+
+    private void Start()
     {
-        if (collision.CompareTag("Player"))
+        _uIManager = FindObjectOfType<UIManager>();
+    }
+
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
         {
-            collision.gameObject.SetActive(false);
-            gameOverObject.SetActive(true);
+            _uIManager.HPUpdate();
+            player.transform.localPosition = respawn.transform.localPosition;
         }
     }
 }

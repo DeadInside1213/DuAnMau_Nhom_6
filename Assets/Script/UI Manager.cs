@@ -20,7 +20,6 @@ public class UIManager : MonoBehaviour
     {
         Time.timeScale = 1f;
         HP = 3;
-        PlayerPrefs.SetInt("Score", 0);
         Score = PlayerPrefs.GetInt("Score");
     }
 

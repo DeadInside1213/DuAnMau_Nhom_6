@@ -17,6 +17,12 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private LayerMask groundPlayer;
     [SerializeField] private LayerMask wallPlayer;
 
+    private AudioSource audi;
+
+    [SerializeField] AudioClip shot;
+    [SerializeField] AudioClip dead;
+    [SerializeField] AudioClip move;
+
     private void Awake()
     {
         body = GetComponent<Rigidbody2D>();

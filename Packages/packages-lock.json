@@ -22,6 +22,7 @@
     },
     "com.unity.2d.aseprite": {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -35,6 +36,9 @@
 =======
       "version": "1.0.1",
 >>>>>>> main
+=======
+      "version": "1.1.0",
+>>>>>>> Stashed changes
 =======
       "version": "1.1.0",
 >>>>>>> Stashed changes
@@ -181,6 +185,7 @@
 <<<<<<< HEAD
         "com.unity.2d.tilemap.extras": "3.1.2",
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 <<<<<<< HEAD
         "com.unity.2d.aseprite": "1.1.0"
 =======
@@ -194,6 +199,9 @@
 =======
         "com.unity.2d.aseprite": "1.0.1"
 >>>>>>> main
+=======
+        "com.unity.2d.aseprite": "1.1.0"
+>>>>>>> Stashed changes
 =======
         "com.unity.2d.aseprite": "1.1.0"
 >>>>>>> Stashed changes

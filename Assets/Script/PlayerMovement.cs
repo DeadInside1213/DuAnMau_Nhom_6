@@ -17,11 +17,19 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private LayerMask groundPlayer;
     [SerializeField] private LayerMask wallPlayer;
 
+    private AudioSource audi;
+
+    [SerializeField] AudioClip shot;
+    [SerializeField] AudioClip dead;
+    [SerializeField] AudioSource move;
+    [SerializeField] AudioClip jump;
+
     private void Awake()
     {
         body = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         box = GetComponent<BoxCollider2D>();
+        audi = GetComponent<AudioSource>();
     }
     private void Update()
     {
@@ -32,10 +40,19 @@ public class PlayerMovement : MonoBehaviour
 
         //Flip player when moving left \ right 
         if (horizontalInput > 0.01f)
+        {
+            move.Play();
             transform.localScale = Vector3.one;
+        }
+            
 
         else if (horizontalInput < -0.01f)
+        {
+            move.Play();
             transform.localScale = new Vector3(-1, 1, 1);
+        }
+            
+        if (horizontalInput == 0) move.Stop();
 
         if (Input.GetKey(KeyCode.Space) && isGrounded())
             Jump();
@@ -56,7 +73,7 @@ public class PlayerMovement : MonoBehaviour
                 velocity.x *= -1;
             }
 
-
+            audi.PlayOneShot(shot);
             bullet.GetComponent<Rigidbody2D>().velocity = velocity;
             Destroy(bullet, 2f);
             anim.SetTrigger("shoot");
@@ -67,6 +84,7 @@ public class PlayerMovement : MonoBehaviour
     }
     private void Jump()
     {
+        audi.PlayOneShot(jump);
         body.velocity = new Vector2(body.velocity.x, jumpForce);
         anim.SetTrigger("jump");
        

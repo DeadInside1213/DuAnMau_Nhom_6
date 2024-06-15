@@ -23,12 +23,16 @@
     "com.unity.2d.aseprite": {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       "version": "1.1.0",
 =======
       "version": "1.0.0",
 >>>>>>> main
 =======
       "version": "1.1.0",
+>>>>>>> main
+=======
+      "version": "1.0.1",
 >>>>>>> main
       "depth": 1,
       "source": "registry",
@@ -172,6 +176,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
         "com.unity.2d.tilemap.extras": "3.1.2",
+<<<<<<< HEAD
         "com.unity.2d.aseprite": "1.1.0"
 =======
         "com.unity.2d.tilemap.extras": "3.1.1",
@@ -180,6 +185,9 @@
 =======
         "com.unity.2d.tilemap.extras": "3.1.2",
         "com.unity.2d.aseprite": "1.1.0"
+>>>>>>> main
+=======
+        "com.unity.2d.aseprite": "1.0.1"
 >>>>>>> main
       }
     },

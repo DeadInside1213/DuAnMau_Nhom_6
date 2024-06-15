@@ -56,16 +56,7 @@ public class Enemy1 : MonoBehaviour
          new Vector3(1, 1, 0) : new Vector3(-1, 1, 0);
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.gameObject.CompareTag("Arrow"))
-        {
-            _uiManager.ScoreUpdate(1000);
 
-            Destroy(gameObject);
-            Destroy(other.gameObject);
-        }
-    }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -74,5 +65,12 @@ public class Enemy1 : MonoBehaviour
             _uiManager.HPUpdate();
         }
 
+        if (collision.gameObject.CompareTag("Arrow"))
+        {
+            _uiManager.ScoreUpdate(1000);
+
+            Destroy(gameObject);
+            Destroy(collision.gameObject);
+        }
     }
 }

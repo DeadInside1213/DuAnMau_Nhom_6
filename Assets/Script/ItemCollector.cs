@@ -6,6 +6,9 @@ public class ItemCollector : MonoBehaviour
 {
 
     string[] itemTag = { "Item", "Coin" };
+    [SerializeField] AudioClip collect;
+    AudioSource audi;
+
 
     UIManager _uiManager;
 
@@ -28,10 +31,14 @@ public class ItemCollector : MonoBehaviour
             _uiManager.ScoreUpdate(1000);
             Destroy(collision.gameObject);
 
+            audi = GetComponent<AudioSource>();
+            audi.PlayOneShot(collect);
         }
         if (collision.tag == "Key")
         {
             Destroy(collision.gameObject);
+            audi = GetComponent<AudioSource>();
+            audi.PlayOneShot(collect);
         }
     }
 }
